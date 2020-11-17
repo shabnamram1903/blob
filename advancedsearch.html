@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+    <title></title>
+    <style>
+        .divelementsforlabel{
+
+            float: left;
+            display: inline-block;
+            min-width: 167px;
+            width: 16%;
+            height: 42px;
+            color: #222;
+            font-size: 13px;
+            line-height: 16px;
+            vertical-align: middle
+        }
+
+        .divelementsforinput{
+            float: left;
+display: inline-block;
+min-width: 167px;
+min-height: 41px;
+vertical-align: middle;
+width: 50%;
+
+            
+        }
+        .inputstyle::selection
+        {
+            border: 1px solid #0a75b3dc
+        }
+        .rowalignment{
+            clear: both;
+        }
+
+        .inputstyle{
+            height: 25px;
+width: 95%;
+border-radius: 1px;
+border: 1px solid #d9d9d9;
+outline: 1px;
+border-top-style: inset;
+box-shadow: 5px grey;
+/* border-top: 1px solid #4D90FA; */
+/* border-color: white; */
+padding-top: 1px;
+padding-right: 8px;
+padding-left: 8px;
+-webkit-box-shadow: 0 0 1px #4d90f inset;
+/* -webkit-border-radius: 5px; */
+border-width: 1px;
+color: -internal-light-dark(black, white);
+/* border-collapse: collapse; */
+        }
+
+        .inputstyle:focus{
+            outline:1px solid #3079ed;
+        }
+        
+        .btnstyle{background-color: #4D90FA;
+                    color: white;
+                    padding: 0px 12px;
+                    height: 30px;
+                    box-shadow: none;
+                    border: none;
+                    font-weight: bolder;
+                    border-radius: 3px;
+                    border: 1px solid #3079ed;
+                    }
+        .btnstyle:hover
+        {
+            
+            font-weight: bolder;
+            background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed)
+        }
+
+
+    </style>
+    </head>
+    <body style="color: #222;background: #fff;">
+        <div class="ctr-p" id="viewport" style="
+            position: absolute;
+            width: 100%;
+            top: 0px;
+            min-height: 100%;">
+            <div style="background: #f1f1f1;
+                font: 13px/27px Arial,sans-serif;
+                position: relative;
+                height: 60px;
+                width: 100%;">
+                <div style="
+                    height: 60px;
+                    max-width: 152px;
+                    min-width: 152px;
+                    line-height: 58px;
+                    vertical-align: middle;">
+                    <div style="position: absolute;padding: 0 20px 0 15px;/* margin-top: 10px; */margin-bottom: fit-content;">
+    
+                        <a href="index.html" type="hidden">
+                            <img src="images/googlelogo_color_272x92dp.png" alt="Go to Google Home" href="index.html" style="background-position: 0 -35px;
+                                height: 33px;width: 92px;display: inline-block;line-height: 0;outline: none;vertical-align: middle;">
+                        </a>
+                    </div>
+                </div> 
+            </div>
+
+            <div style="width: max-content;margin: 40px 2% 0 45px;">
+                <label style="font-size: 20px;color: #d93025;">Advanced search</label>    
+            </div>
+    
+            <div style="max-width: 1140px;min-width: 200px;width: 96%;margin: 40px 2% 0 45px;">
+                find pages with
+            </div>
+
+            <div style="max-width: 1140px;min-width: 200px;width: 96%;margin: 40px 2% 0 45px;">
+                <form action="https://www.google.com/search" method="GET" style="height:250px">
+                    <div>
+                        <div class="rowalignment">
+                            <div class="divelementsforlabel">
+                                <label style="height: 30px;display: table-cell;vertical-align: middle;">
+                            all these words:
+                                </label>
+                            </div>
+                            <div class="divelementsforinput">
+                                <input type="text" class="inputstyle" name="as_q">
+                            </div>
+                        </div>
+                        <div class="rowalignment">
+                            <div class="divelementsforlabel">
+                                <label>this exact word or phrase:</label>
+                            </div>
+                            <div class="divelementsforinput">
+                                <input type="text" class="inputstyle" name="as_epq">
+                            </div>
+                        </div>
+                        <div class="rowalignment">
+                            <div class="divelementsforlabel">
+                                <label>any of these words:</label>
+                            </div>
+                            <div class="divelementsforinput">
+                                <input type="text" class="inputstyle" name="as_oq"> 
+                            </div>
+                        </div>
+                        <div class="rowalignment">
+                            <div class="divelementsforlabel">
+                                <label>none of these words:</label>
+                            </div>
+                            <div class="divelementsforinput">
+                                <input type="text" class="inputstyle" name="as_eq">
+                            </div>
+                            <div class="divelementsforinput" style="display: flex;align-items: center;/* float: right; */">          
+                                <input type="submit" value="Advanced Search" class="btnstyle" name="tbs"  style="/* position: absolute; */
+                                    margin-left: 75%;">
+                            </div>
+                        </div>            
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
